@@ -26,9 +26,6 @@ SECRET_KEY = '#m5u*gdnic+#zw8^q27w22wdfg80()r9sqp9f@7k93c-1s)88m'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '0.0.0.0',
-    '192.168.42.162',
-    '127.0.0.1'
 ]
 
 
@@ -141,8 +138,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 EMAIL_HOST = 'in-v3.mailjet.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = '5ca861530f9a5910968ed88717d08766'
-EMAIL_HOST_PASSWORD = 'e4ce52f6fe55ddea67e8a613326c394c'
+EMAIL_HOST_USER = 'x'
+EMAIL_HOST_PASSWORD = 'x'
 EMAIL_USE_TLS = True
 
 LOGIN_URL = 'login'
