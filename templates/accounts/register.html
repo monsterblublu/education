@@ -1,0 +1,18 @@
+{% extends 'root/base.html' %}
+{% load bootstrap4 %}
+{% block content %}
+  <div class="container mt-4">
+      <h1 class="sign-in-header-mobile f-title mb-4">Please Sign Up</h1>
+    <div class="row justify-content-center">
+      <div class="col col-lg-5">
+        <form action="{% url 'signup' %}" method="post">
+          {% csrf_token %}
+          {% bootstrap_form form %}
+          {% buttons %}
+              <button type="submit" class="btn btn-primary btn-lg btn-block" name="button">Create Account</button>
+          {% endbuttons %}
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}

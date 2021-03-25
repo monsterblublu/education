@@ -1,0 +1,141 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&family=Source+Sans+Pro:wght@700&display=swap');
+
+body{
+  font-family: 'Roboto', sans-serif !important;
+  padding: 0px;
+  padding-bottom: 50px !important;
+  margin: 0px;
+}
+
+.sign-in-header-mobile {
+  font-size: 28px;
+}
+
+.btn{
+  border-radius: 12px !important;
+}
+
+.linebreak {
+	color: #5d5e62;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	margin: 40px auto;
+}
+
+.linebreak::after, .linebreak::before {
+	content: "";
+	display: inline-block;
+	width: 40%;
+	height: 1px;
+	margin: 0 8px;
+	background-color: #eae9e9;
+}
+
+.form-control{
+  border-radius: 12px;
+  height: calc(2.5em + .75rem + 2px)
+}
+
+.form-group button{
+  font-size: 1.1rem;
+}
+
+.form-group label{
+  display: none;
+}
+
+.f-title{
+  font-weight: 700;
+}
+
+nav{
+  position:fixed;
+  bottom: 0;
+  width:100%;
+
+}
+
+.global-nav{
+  height: 55px;
+  background-color: rgba(249,249,249,1);
+  display: flex;
+  overflow-x: auto;
+  z-index: 9999;
+}
+
+
+.global-nav-link{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  min-width: 50px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-decoration: none !important;
+  color: #8E8E93;
+}
+
+.active{
+  color: #007AFF;
+}
+
+.global-nav-icon{
+  font-size: 20px;
+}
+
+.global-nav-text{
+  font-size: 11px;
+}
+
+
+
+hr{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand{
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 700;
+
+}
+
+.panel-plus{
+  font-size: 20px;
+}
+
+.groups-thumb{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.title-group{
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  margin-bottom: inherit;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.24px;
+}
+
+.messages-group{
+  font-family: "Open Sans",sans-serif;
+  font-size: 13px;
+  color: rgba(60,60,67,0,6);
+  line-height: 18px;
+  letter-spacing: -0.08 px;
+  color: rgba(60,60,67,0.6);
+}
+
+@media (min-width: 992px) {
+  #mobile-app{
+    display: none;
+  }
+}

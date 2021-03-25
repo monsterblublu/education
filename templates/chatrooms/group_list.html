@@ -1,0 +1,36 @@
+{% extends 'root/base.html' %}
+{% load bootstrap4 %}
+{% block content %}
+
+<section id="mobile-app">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
+  <div class="container">
+    <a class="navbar-brand" href="#">Classroom</a>
+    <a href="{% url 'create-group' %}"><i class="bi bi-plus-circle panel-plus"></i></a>
+
+    </div>
+  </nav>
+
+  <div class="container">
+
+    {% for group in object_list %}
+    <div class="row">
+
+      <div class="col col-2">
+        <img class="groups-thumb" src="https://vectorforfree.com/wp-content/uploads/2020/05/Reading_Book_VectorForFree.jpg" alt="">
+      </div>
+
+      <div class="col">
+        <h5 class="title-group">{{group.name}}</h5>
+        <p class="messages-group">{{group.description}}</p>
+      </div>
+    </div>
+    <hr>
+    {% endfor %}
+
+
+
+  </div>
+
+</section>
+{% endblock %}
